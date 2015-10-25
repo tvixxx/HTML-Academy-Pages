@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="barbershop description" description="some hair features">
+	<title>Барбершоп бородинский</title>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="../normalizeFile/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/barbershop-style.css">
+</head>
+<body>
+	<!-- Header -->
+	<header class="main-header">
+		<!-- Header-Container -->
+		<div class="container clearfix">
+			<!-- Header-Main-Navigation -->
+			<nav class="main-navigation">
+				<ul>
+					<li class="active">
+						<a href="#">Главная</a>
+					</li>
+					<li>
+						<a href="#">Информация</a>
+					</li>
+					<li>
+						<a href="#">Новости</a>
+					</li>
+					<li>
+						<a href="text.html">Прайс-лист</a>
+					</li>
+					<li>
+						<a href="catalog.html">Магазин</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- //Header-Main-Navigation -->
+
+			<!-- Header-Login -->
+			<div class="user-block">
+				<a href="#" class="login">Вход</a>
+			</div>
+			<!-- //Header-Login -->
+		</div>
+		<!-- Header-Container -->
+	</header>
+	<!-- //Header -->
+	
+	<!-- Container -->
+	<div class="container">
+		<!-- Main-Logo -->
+		<figure class="main-logo">
+			<img src="img/BORODINSK-Logo.png" width="368" height="204" alt="logo">
+		</figure>
+		<!-- Features -->
+		<section class="features-row clearfix">
+			<!-- Features Item 1 -->
+			<div class="features-item">
+				<div class="features-title">Быстро</div>
+				<p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки!</p>
+			</div>
+			<!-- Features Item 2 -->
+			<div class="features-item">
+				<div class="features-title">Круто</div>
+				<p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне</p>
+			</div>
+			<!-- Features Item 3 -->
+			<div class="features-item">
+				<div class="features-title">Дорого</div>
+				<p>Наши мастера - профессионалы своего дела и не могут стоить дешево. к тому же,разве цена не дает определенный статус?</p>
+			</div>
+		</section>
+		<!-- //Features -->
+
+		<!-- Main-Content-First -->
+		<div class="index-content clearfix">
+			<!-- Content-Column-Left -->
+			<section class="content-column-left">
+				<h2 class="content-column-title">Новости</h2>
+					<ul class="news-preview">
+						<li>
+							Нам наконец завезли Ягермайстер! теперь вы можете пропустить стаканчик во время стрижки<br>
+							<time datetime="2015-09-24">24 сентября</time>
+						</li>
+						<li>
+							В нашей команде пополнение, Борис &laquoБритва&raquo Стригунец,обладатель множества титулов и&nbsp; наград пополнил наши стройные ряды<br>
+							<time datetime="2015-10-24">24 сентября</time>
+						</li>
+					</ul>
+					<a href="#" class="btn">Все новости</a>
+			</section>
+			<!-- //Content-Column-Left -->
+
+			<!-- Content-Column-Right -->
+			<section class="content-column-right">
+				<h2 class="content-column-title">Фотогалерея</h2>
+					<div class="gallery">
+						<figure class="gallery-content">
+							<img src="img/index-content-photo1.jpg"  width="286" height="164" alt="news-photo">
+						</figure>
+						<button class="btn gallery-prev" disabled>Назад</button>
+						<button class="btn gallery-next">Вперед</button>
+					</div>
+			</section>
+			<!-- //Content-Column-Right -->
+		</div>
+		<!-- //Main-Content-First -->
+
+		<!-- Main-Content-Second -->
+		<div class="index-content clearfix">
+			<!-- Content-Column-Left -->
+			<section class="content-column-left">
+				<div class="main-contacts">
+					<h2 class="content-column-title">Контактная информация</h2>
+					<p>
+						Барбершоп "Бородинский"<br>
+						Адерс: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
+							<br>
+						Телефон: +7 (495) 666-02-66
+					</p>
+					<p>
+						Время работы:<br>
+						пн - пт: с 10:00 до 22:00<br>
+						сб - вс: с 10:00 до 19:00
+					</p>
+					<a href="#" class="btn">Как проехать</a>
+					<a href="#" class="btn">Обратная связь</a>
+				</div>
+			</section>
+			<!-- //Content-Column-Left -->
+				
+			<!-- Content-Column-Right -->
+			<section class="content-column-right">
+				<div class="appointment-form">
+					<h2 class="content-column-title">Записаться</h2>
+					<p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+					<form action="/echo" method="post">
+							<input type="date" name="date" value="" placeholder="Дата">
+
+							<input type="time" name="time" value="" placeholder="Время">
+
+							<input type="text" name="name" value="" placeholder="Ваше имя">
+
+							<input type="tel" name="phone" value="" placeholder="Телефон">
+
+							<button type="sumbit" class="btn">Отправить</button>
+					</form>
+				</div>
+			</section>
+			<!-- Content-Column-Right -->
+		</div>
+	</div>
+	<!-- //Container -->
+
+	<!-- Footer -->
+	<footer class="main-footer">
+		<!-- Footer-Container -->
+		<div class="container clearfix">
+			<!-- Footer-contacts -->
+			<seciton class="footer-contacts">
+				Барбершоп "Бородинский"
+					<br>
+				Адерс: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
+					<br>
+				<a href="#">Как нас найти?</a>
+					<br>
+				Телефон: +7 (495) 666-02-66
+			</seciton>
+			<!-- //Footer-Contacts -->
+			<!-- Footer-Social -->
+			<seciton class="footer-social">
+				<p>Давайте дружить!</p>
+				<a href="#" class="social-btn social-btn-vk"></a>
+				<a href="#" class="social-btn social-btn-fb"></a>
+				<a href="#" class="social-btn social-btn-inst"></a>
+			</seciton>
+			<!-- //Footer-Social -->
+			<!-- Footer-Copyright -->
+			<seciton class="footer-copyright">
+				<p>Дизайн сайта:</p>
+				<a href="#" class="btn">HTMLACADEMY</a>
+			</seciton>
+			<!-- //Footer-Copyright -->
+		</div>
+		<!-- //Footer-Container -->
+	</footer>
+	<!-- //Footer -->
+</body>
+</html>
