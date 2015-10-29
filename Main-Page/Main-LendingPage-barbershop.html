@@ -54,7 +54,7 @@
 	<div class="container">
 		<!-- Main-Logo -->
 		<figure class="main-logo">
-			<img src="img/BORODINSK-Logo.png" width="368" height="204" alt="logo">
+			<img src="img/BORODINSK-Logo-compress.png" width="368" height="204" alt="logo">
 		</figure>
 		<!-- Features -->
 		<section class="features-row clearfix">
@@ -189,5 +189,31 @@
 		<!-- //Footer-Container -->
 	</footer>
 	<!-- //Footer -->
+
+	<!-- Modal-Window Login -->
+	<div class="modal-content">
+		<div class="modal-content-close">
+			закрыть
+		</div>
+		<h2 class="modal-content-title">Личный Кабинет</h2>
+		<p>Введите пожалуйста свой логин и пароль.</p>
+		<form class="login-form" action="/echo" method="post">
+			<input type="text" class="icon-user" name="login" placeholder="Логин" required>
+			<input type="password" class="icon-password" name="password" placeholder="Пароль" required>
+			<input type="checkbox"  name="remember" id="remember-me">
+			<label for="remember-me">Запомните меня</label>
+			<a href="#" class="restore">Я забыл пароль!</a>
+			<button type="submit" class="btn">Войти</button>
+		</form>
+	</div>
+	<!-- //Modal-Window Login-->
+
+	<!-- Modal Window Map -->
+	<div class="modal-content-map">
+		<div class="modal-content-close">
+			закрыть
+		</div>
+	</div>
+	<!-- //Modal Window Map -->
 </body>
 </html>
