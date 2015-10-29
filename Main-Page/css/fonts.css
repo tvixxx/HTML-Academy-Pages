@@ -1,0 +1,15 @@
+/* font-family: "PT Sans Narrow"; */
+@font-face {
+	font-family: PT Sans Narrow;
+	src: url ("../base-fonts/PT_Sans_Narrow/PT Sans Narrow.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+/* font-family: "PT Sans Narrow Bold"; */
+@font-face {
+	font-family: PT Sans Narrow Bold;
+	src: url ("../base-fonts/PT_Sans_Narrow/PT Sans Narrow Bold.ttf");
+	font-style: normal;
+	font-weight: 700;
+}
