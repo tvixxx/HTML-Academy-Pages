@@ -666,4 +666,14 @@ Modal Content Window *Map*
 */
 .modal-content-map {
 	display: block;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 766px;
+	height: 561px;
+	margin-left: -390px;
+	margin-top: -287.5px;
+	border: 7px solid #fff;
+	background: url(../img/sprite/map-mask_compres.png);
+	box-shadow: 0 30px 50px rgba(0,0,0,0.7);
 }
