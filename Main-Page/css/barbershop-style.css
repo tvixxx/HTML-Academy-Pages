@@ -3,6 +3,8 @@
 Common
 *
 */
+
+
 body {
 	font-size: 14px;
 	line-height: 24px;
@@ -223,7 +225,7 @@ Index Content
 	padding: 10px 33px;
 	margin-right: 16px;
 	font-size: 14px;
-	/*font-family: "PT Sans Narrow", sans-serif;*/
+	font-family: "PT Sans Narrow", Arial, sans-serif;
 	font-weight: 700;
 	line-height: 24px;
 	text-decoration: none;
@@ -286,7 +288,7 @@ Index Content
 	padding: 10px 15px;
 	border: 2px solid #000;
 	font-size: 14px;
-	/*font-family: "PT Sans Narrow", sans-serif;*/
+	font-family: "PT Sans Narrow", Arial, sans-serif;
 	line-height: 24px;
 	text-transform: uppercase;
 	color: #000;
@@ -606,7 +608,7 @@ Modal-Content-Window *Login*
 
 	font-size: 14px;
 	line-height: 24px;
-	/*font-family: "PT Sans Narrow", Arial, sans-serif;*/
+	font-family: "PT Sans Narrow", Arial, sans-serif;
 	text-transform: uppercase;
 	color: #000;
 	border: 2px solid #000;
