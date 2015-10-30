@@ -199,8 +199,8 @@
 		<h2 class="modal-content-title">Личный Кабинет</h2>
 		<p>Введите пожалуйста свой логин и пароль.</p>
 		<form class="login-form" action="/echo" method="post">
-			<input type="text" class="icon-user" name="login" placeholder="Логин" required>
-			<input type="password" class="icon-password" name="password" placeholder="Пароль" required>
+			<input type="text" class="icon-user" name="login" placeholder="Логин" >
+			<input type="password" class="icon-password" name="password" placeholder="Пароль" >
 			<input type="checkbox"  name="remember" id="remember-me">
 			<label for="remember-me">Запомните меня</label>
 			<a href="#" class="restore">Я забыл пароль!</a>
@@ -220,24 +220,56 @@
 	<!-- Open and Close Modal Window Login -->
 	<script>
 
+		// Our variables in ours document and search their
 		var link = document.querySelector(".login");
 		var popup = document.querySelector(".modal-content");
-		var close = document.querySelector(".modal-content-close");
-		var login = popup.querySelector("[name=login]")
+		var close = popup.querySelector(".modal-content-close");
+		var form = popup.querySelector("form");
+		var login = popup.querySelector("[name=login]");
+		var password = popup.querySelector("[name=password");
+		var storage = localStorage.getItem("login");
 
+		// Open the popup modal-window, focus on input login, condition (password.focus)
 		link.addEventListener("click" , function (event) {
 			event.preventDefault();
 			popup.classList.add("modal-content-show");
 			login.focus();
+
+			if (storage) {
+				login.value = storage;
+				password.focus();
+			} else {
+				login.focus();
+			}
 		});
-	
-		
+
+		// Close the active popup modal-window by click at the cross
 		close.addEventListener("click", function(event){
 			event.preventDefault();
 			popup.classList.remove("modal-content-show");
 			});
 
+		// Checking our login and(or) password in our form (ifTrue), and setItem login.value
+		form.addEventListener("submit", function (event){
+			if (!(login.value && password.value)){
+				event.preventDefault();
+				console.log("Need output login and password");
+			} else {
+				localStorage.setItem("login", login.value);
+			}
+		});
+
+		// Esc (exit) from open popup modal-window login-form
+		window.addEventListener("keydown", function(event){
+			if (event.keyCode == 27) {
+				if (popup.classList.contains("modal-content-show")) {
+					popup.classList.remove("modal-content-show");
+				}
+			}
+			});
+
 	</script>
 	<!-- //Open and Close Modal Window Login -->
+
 </body>
 </html>
