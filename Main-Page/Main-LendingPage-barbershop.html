@@ -217,12 +217,27 @@
 	</div>
 	<!-- //Modal Window Map -->
 
+	<!-- Open and Close Modal Window Login -->
+	<script>
 
-	<script type="text/javascript">
 		var link = document.querySelector(".login");
-		link.addEventListener("click", function() {
-			console.log("Клик по ссылке вход");
+		var popup = document.querySelector(".modal-content");
+		var close = document.querySelector(".modal-content-close");
+		var login = popup.querySelector("[name=login]")
+
+		link.addEventListener("click" , function (event) {
+			event.preventDefault();
+			popup.classList.add("modal-content-show");
+			login.focus();
+		});
+	
+		
+		close.addEventListener("click", function(event){
+			event.preventDefault();
+			popup.classList.remove("modal-content-show");
 			});
+
 	</script>
+	<!-- //Open and Close Modal Window Login -->
 </body>
 </html>
