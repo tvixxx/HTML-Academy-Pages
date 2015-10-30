@@ -632,6 +632,7 @@ Modal-Content-Window *Login* Display:none;
 .login-form .restore {
 	float: right;
 	color: #000;
+	outline: none;
 }
 .login-form .restore:hover {
 	text-decoration: none;
