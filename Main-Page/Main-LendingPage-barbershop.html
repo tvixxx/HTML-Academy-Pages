@@ -128,7 +128,7 @@
 						пн - пт: с 10:00 до 22:00<br>
 						сб - вс: с 10:00 до 19:00
 					</p>
-					<a href="#" class="btn">Как проехать</a>
+					<a href="#" class="btn map-open">Как проехать</a>
 					<a href="#" class="btn">Обратная связь</a>
 				</div>
 			</div>
@@ -214,62 +214,24 @@
 		<div class="modal-content-close">
 			закрыть
 		</div>
+
+		<!-- Yandex Map ID -->
+		<div id="yandex-map"> </div>
+
+		<!-- Google Map -->
+		<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6138410022027!2d30.323641299475092!3d59.93854966660632!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe2913435672b14c9!2s21+Shop!5e0!3m2!1sru!2sru!4v1446278164078" width="766" height="561" frameborder="0" style="border:0" allowfullscreen></iframe> -->
 	</div>
 	<!-- //Modal Window Map -->
 
-	<!-- Open and Close Modal Window Login -->
-	<script>
 
-		// Our variables in ours document and search their
-		var link = document.querySelector(".login");
-		var popup = document.querySelector(".modal-content");
-		var close = popup.querySelector(".modal-content-close");
-		var form = popup.querySelector("form");
-		var login = popup.querySelector("[name=login]");
-		var password = popup.querySelector("[name=password");
-		var storage = localStorage.getItem("login");
-
-		// Open the popup modal-window, focus on input login, condition (password.focus)
-		link.addEventListener("click" , function (event) {
-			event.preventDefault();
-			popup.classList.add("modal-content-show");
-			login.focus();
-
-			if (storage) {
-				login.value = storage;
-				password.focus();
-			} else {
-				login.focus();
-			}
-		});
-
-		// Close the active popup modal-window by click at the cross
-		close.addEventListener("click", function(event){
-			event.preventDefault();
-			popup.classList.remove("modal-content-show");
-			});
-
-		// Checking our login and(or) password in our form (ifTrue), and setItem login.value
-		form.addEventListener("submit", function (event){
-			if (!(login.value && password.value)){
-				event.preventDefault();
-				console.log("Need output login and password");
-			} else {
-				localStorage.setItem("login", login.value);
-			}
-		});
-
-		// Esc (exit) from open popup modal-window login-form
-		window.addEventListener("keydown", function(event){
-			if (event.keyCode == 27) {
-				if (popup.classList.contains("modal-content-show")) {
-					popup.classList.remove("modal-content-show");
-				}
-			}
-			});
-
+	<!-- Script Yandex-Map -->
+	<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=OXRGjZPsora0UIDe2_K6NnJZbSRwY00F&width=766&height=561&lang=ru_RU&id=yandex-map">
 	</script>
-	<!-- //Open and Close Modal Window Login -->
+
+	<!-- Open and Close Modal Window Login (popup) -->
+	<script src="js/popup.js"> </script> 
+	<script src="js/map_popup.js"></script>
+	<!-- //Open and Close Modal Window Login (popup) -->
 
 </body>
 </html>
