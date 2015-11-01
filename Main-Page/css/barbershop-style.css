@@ -463,6 +463,19 @@ Inner-Content-sub-index
 
 /*
 *
+Inner Sub Login-Page 
+*
+*/
+.inner-content .login-form {
+	margin-top: 30px;
+	margin-bottom: 10px;
+	width: 300px;
+	margin: 0 auto;
+}
+
+
+/*
+*
 Footer 
 *
 */
