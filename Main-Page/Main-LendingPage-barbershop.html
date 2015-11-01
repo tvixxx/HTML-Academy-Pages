@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -105,6 +105,7 @@
 						</figure>
 						<button class="btn gallery-prev" disabled>Назад</button>
 						<button class="btn gallery-next">Вперед</button>
+						<a href="#" class="btn more">Больше</a>
 					</div>
 			</div>
 			<!-- //Content-Column-Right -->
@@ -232,6 +233,15 @@
 	<script src="js/popup.js"> </script> 
 	<script src="js/map_popup.js"></script>
 	<!-- //Open and Close Modal Window Login (popup) -->
+
+	<!-- Check on javascript in our code -->
+	<script> 
+		var html = document.documentElement;
+		html.className = html.className.replace("no-js","js");
+	</script>
+	<!-- //Check on javascript in our code -->
+
+
 
 </body>
 </html>
