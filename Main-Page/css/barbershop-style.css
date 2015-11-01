@@ -219,6 +219,7 @@ Index Content
 .news-preview time {
 	text-transform: none;
 }
+
 .btn {
 	display: inline-block;
 	vertical-align: top;
@@ -274,6 +275,29 @@ Index Content
 .gallery-next {
 	right: 0;
 }
+
+/*
+*
+No-js
+*
+*/
+
+.js .gallery .gallery-prev ,
+.js .gallery .gallery-next {
+	display: block;
+}
+.js .gallery .more {
+	display: none;
+}
+.no-js .gallery .gallery-prev ,
+.no-js .gallery .gallery-next {
+	display: none;
+}
+.no-js .gallery .more {
+	display: block;
+	width: 100px;
+}
+
 .index-content p {
 	margin: 0;
 	margin-bottom: 25px;
