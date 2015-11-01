@@ -571,6 +571,10 @@ Footer
 Modal-Content-Window *Login* Display:none;
 *
 */
+
+
+
+
 .modal-content {
 	display: none;
 	position: absolute;
@@ -682,6 +686,18 @@ Modal-Content-Window *Login* Display:none;
 	background-position: 4px -228px;
 	background-repeat: no-repeat;
 }
+
+
+/*
+*
+Sub-Page Price-List (login window)
+*
+*/
+.modal-content {
+	z-index: 2;
+	position: fixed;
+}
+
 
 /*
 *
