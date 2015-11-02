@@ -6,3 +6,4 @@
 ##### 3) Sub page `Barbershop-login.html` 
 ##### 4) Sub page `Barbershop-map.html`
 ##### 4) Sub page `Barbershop-galery.html`
+#### 4) Sub page `Barbershop-shop.html`
