@@ -363,7 +363,9 @@ Sub-Pages CSS *Price-list*
 	width: 8px;
 	height: 8px;
 	background: #000;
-	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
 }
 .breadcrumbs a {
 	color: #000;
@@ -442,7 +444,9 @@ Sub-Pages CSS *Price-list*
 	width: 8px;
 	height: 8px;
 	background: #000;
-	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
 }
 .prices-table {
 	width: 100%;
@@ -575,21 +579,24 @@ Footer
 	background-color: #fff;
 }
 .social-btn-vk {
-	transition: all 0.4s ease;
+	-webkit-transition: all 0.4s ease;
+	        transition: all 0.4s ease;
 	background-position: -159px 13px;
 }
 .social-btn-vk:hover {
 	background-position: -398px 13px;
 }
 .social-btn-fb {
-	transition: all 0.4s ease;
+	-webkit-transition: all 0.4s ease;
+	        transition: all 0.4s ease;
 	background-position: -237px 10px;
 }
 .social-btn-fb:hover {
 	background-position: -475px 10px;
 }
 .social-btn-inst {
-	transition: all 0.4s ease;
+	-webkit-transition: all 0.4s ease;
+	        transition: all 0.4s ease;
 	background-position: -314px 11px;
 }
 .social-btn-inst:hover {
@@ -766,22 +773,36 @@ Modal Content Window *Map*
 Modal-Content-Window *Login* Display:block;
 *
 */
-@keyframes bounce {
-	0% { transform: translateY(-2000px);}
-	70% { transform: translateY(30px);}
-	90% { transform: translateY(-10px);}
-	100% { transform: translateY(0);}
+@-webkit-keyframes bounce {
+	0% { -webkit-transform: translateY(-2000px); transform: translateY(-2000px);}
+	70% { -webkit-transform: translateY(30px); transform: translateY(30px);}
+	90% { -webkit-transform: translateY(-10px); transform: translateY(-10px);}
+	100% { -webkit-transform: translateY(0); transform: translateY(0);}
 	
 }
+@keyframes bounce {
+	0% { -webkit-transform: translateY(-2000px); transform: translateY(-2000px);}
+	70% { -webkit-transform: translateY(30px); transform: translateY(30px);}
+	90% { -webkit-transform: translateY(-10px); transform: translateY(-10px);}
+	100% { -webkit-transform: translateY(0); transform: translateY(0);}
+	
+}
+@-webkit-keyframes shake {
+	0%,100% { -webkit-transform: translateX(0); transform: translateX(0);}
+	10%,30%,50%,70%,90% { -webkit-transform: translate(-10px); transform: translate(-10px);}
+	20%,40%,60%,80% { -webkit-transform: translateX(10px); transform: translateX(10px);}
+}
 @keyframes shake {
-	0%,100% { transform: translateX(0);}
-	10%,30%,50%,70%,90% { transform: translate(-10px);}
-	20%,40%,60%,80% { transform: translateX(10px);}
+	0%,100% { -webkit-transform: translateX(0); transform: translateX(0);}
+	10%,30%,50%,70%,90% { -webkit-transform: translate(-10px); transform: translate(-10px);}
+	20%,40%,60%,80% { -webkit-transform: translateX(10px); transform: translateX(10px);}
 }
 .modal-content-show {
 	display: block;
-	animation: bounce .4s;
+	-webkit-animation: bounce .4s;
+	        animation: bounce .4s;
 }
 .modal-error {
-	animation: shake .5s;
+	-webkit-animation: shake .5s;
+	        animation: shake .5s;
 }
