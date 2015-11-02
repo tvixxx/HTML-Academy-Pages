@@ -281,7 +281,6 @@ Index Content
 No-js
 *
 */
-
 .js .gallery .gallery-prev ,
 .js .gallery .gallery-next {
 	display: block;
@@ -497,6 +496,25 @@ Inner Sub Login-Page
 	margin: 0 auto;
 }
 
+/*
+*
+Inner Sub Galery-Page
+*
+*/
+.main-galery {
+	height: 164px;
+	margin: 0;
+}
+.inner-content .main-galery img {
+	width: 250px;
+	height: 250px;
+	border: 7px solid white;
+	background: #ccc;
+}
+.main-galery img {
+	margin-left: 30px;
+	margin-top: 20px;
+}
 
 /*
 *
