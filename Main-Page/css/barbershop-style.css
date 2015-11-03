@@ -536,6 +536,11 @@ Sub-page Shop
 .content-shop-column-right {
 	display: block;
 }
+.content-shop-column-left .btn {
+	min-height: 45px;
+	padding: 15px 35px;
+
+}
 .content-shop-column-left {
 	display: inline-block;
 	float: left;
@@ -555,6 +560,7 @@ Sub-page Shop
 }
 .check-form {
 	min-width: 200px;
+	max-width: 220px;
 	font-size: 14px;
 }
 .check-form label {
@@ -563,7 +569,7 @@ Sub-page Shop
 .check-form input[type="checkbox"] + label{
 	position: relative;
 	display: inline-block;
-	min-width: 100px;
+	min-width: 120px;
 	padding-left: 40px;
 	cursor: pointer;
 }
@@ -585,15 +591,18 @@ Sub-page Shop
 	background-repeat: no-repeat;
 }
 /* Radio */
-.check-form label {
+
+.check-form label  {
 	margin-bottom: 15px;
+	vertical-align: top;
 }
-.check-form input[type="radio"] + label{
+.check-form input[type="radio"] ~ label{
 	position: relative;
 	display: inline-block;
-	min-width: 100px;
+	max-width: 120px;
 	padding-left: 40px;
 	cursor: pointer;
+	vertical-align: top;
 }
 .check-form input[type="radio"] {
 	display: none;
@@ -613,7 +622,9 @@ Sub-page Shop
 	background-position: 6px -196px;
 	background-repeat: no-repeat;
 }
-
+.check-form input[type="checkbox"] + label:last-child {
+	margin-bottom: 45px;
+}
 
 
 .content-goods-picker {
@@ -665,8 +676,10 @@ Sub-page Shop
 	width: 90px;
 	padding-left: 20px;
 	padding-right: 15px;
-	margin-right: 12px;
 
+}
+.catalog {
+	font-size: 0;
 }
 .catalog .price {
 	display: inline-block;
@@ -679,8 +692,9 @@ Sub-page Shop
 	width: 103px;
 	min-height: 45px;
 	margin-left: 15px;
-	padding-left: 30px;
-	padding-right: 25px;
+	padding-left: 25px;
+	padding-right: 20px;
+	vertical-align: top;
 	outline: none;
 	border: none;
 }
