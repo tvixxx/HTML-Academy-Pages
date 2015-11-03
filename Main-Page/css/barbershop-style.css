@@ -1,1003 +1,239 @@
-/*
-*
-Common
-*
-*/
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="barbershop description" content="some hair features">
+	<title>Барбершоп бородинский</title>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/barbershop-style.css">
+</head>
 
+<body class="inner-page">
+	<!-- Header -->
+	<header class="main-header">
+		<!-- Header-Container -->
+		<div class="container clearfix">
+			<!-- Header-Main-Navigation -->
+			<nav class="main-navigation">
+				<ul>
+					<li>
+						<a href="barbershop-main.html">Главная</a>
+					</li>
+					<li>
+						<a href="#">Информация</a>
+					</li>
+					<li>
+						<a href="#">Новости</a>
+					</li>
+					<li>
+						<a href="barbershop-price.html">Прайс-лист</a>
+					</li>
+					<li class="active">
+						<a href="barbershop-shop.html">Магазин</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- //Header-Main-Navigation -->
 
-body {
-	font-size: 14px;
-	line-height: 24px;
-	font-family: 'PT Sans Narrow', Arial, sans-serif;
-	font-weight: 700;
-	text-transform: uppercase;
-	color: #fff;
-	min-width: 960px;
-	background: url(../img/backBody-compres.jpg) no-repeat center top;
-}
-.clearfix {
-	content: "";
-	display: table;
-	clear: both;
-}
-.container {
-	width: 940px;
-	margin: 0 auto;
-	padding: 0 10px;
-}
-
-/* Sub-Pages */
-.inner-page {
-	color: #000;
-	background: #f8f5f2 url(../img/index-content-photo-bg.jpg) repeat;
-}
-
-/* Rebase css */
-.inner-page .main-header {
-	margin-bottom: 55px;
-}
-
-
-/*
-*
-Header
-*
-*/
-.main-header {
-	margin-bottom: 60px;
-	background: #000;
-}
-/* White Color For Head */
-.main-header {
-	color: #fff;
-}
-.main-navigation {
-	float: left;
-	width: 780px;
-}
-.user-block {
-	float: right;
-	max-width: 140px;
-}
-.main-navigation ul {
-	margin: 0;
-	padding: 0;
-	font-size: 0;
-	list-style: none;
-}
-.main-navigation li {
-	display: inline-block;
-	font-size: 16px;
-	line-height: 20px;
-	vertical-align: top;
-}
-.main-navigation a {
-	display: block;
-	padding: 25px 20px;
-	text-decoration: none;
-	color: #fff;
-}
-.main-navigation a:hover {
-	background: #242424;
-}
-.main-navigation .active a {
-	position: relative;
-}
-.main-navigation .active a:hover {
-	background: none;
-}
-.main-navigation .active a:after {
-	content: "";
-	position: absolute;
-	bottom: 0px;
-	left: 20px;
-	right: 20px;
-	height: 4px;
-	background: white;
-}
-.login {
-	position: relative;
-	display: inline-block;
-	vertical-align: top;
-	padding: 25px 20px;
-	padding-left: 50px;
-	font-size: 16px;
-	line-height: 20px;
-	text-decoration: none;
-	color: #fff;
-}
-.login:hover {
-	background: #242424;
-}
-.login:before {
-	content: "";
-	position: absolute;
-	top: 28px;
-	left: 20px;
-	width: 18px;
-	height: 16px;
-	background: transparent url(../img/sprite/sprite2.png) no-repeat;
-	background-position: 0 0;
-	opacity: 0.3;
-}
-.login:hover:before {
-	opacity: 1;
-}
-
-/*
-*
-Logo
-*
-*/
-.main-logo {
-	width: 368px;
-	height: 204px;
-	margin: 0 auto;
-	margin-bottom: 25px;
-}
-.main-logo img {
-	width: 368px;
-	height: 204px;
-}
-
-/*
-*
-Features (Content)
-*
-*/
-.features-row {
-	margin-bottom: 80px;
-}
-.features-item {
-	float: left;
-	width: 300px;
-	margin-right: 20px;
-	text-align: center;
-}
-.features-item:last-child {
-	margin-right: 0px;
-}
-.features-title {
-	padding-bottom: 50px;
-	margin-bottom: 30px;
-	position: relative;
-	font-size: 30px;
-	line-height: 42px;
-}
-.features-item p {
-	margin: 10px; 
-}
-.features-title:after {
-	content: "";
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	display: block;
-	width: 30px;
-	height: 29px;
-	margin-left: -10px;
-	background: transparent url(../img/sprite/sprite2.png) no-repeat;
-    background-position: -78px 0px;
-}
-
-/*
-*
-Index Content 
-*
-*/
-.index-content {
-	margin-bottom: 35px;
-	color: #000;
-	background: url(../img/index-content-shadow.png) no-repeat center,
-
-	#f8f5f2 url(../img/index-content-photo-bg.jpg);
-}
-.content-column-left {
-	width: 350px;
-	padding: 25px 75px;
-	float: left;
-}
-.content-column-right {
-	width: 300px;
-	padding: 25px 70px;
-	float: right;
-}
-.content-column-title {
-	margin: 0;
-	margin-bottom: 35px;
-	font-size: 30px;
-	line-height: 42px;
-}
-.news-preview {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-.news-preview li{
-	margin-bottom: 25px;
-}
-.news-preview time {
-	text-transform: none;
-}
-
-.btn {
-	display: inline-block;
-	vertical-align: top;
-	padding: 10px 33px;
-	margin-right: 16px;
-	font-size: 14px;
-	font-family: "PT Sans Narrow", Arial, sans-serif;
-	font-weight: 700;
-	line-height: 24px;
-	text-decoration: none;
-	text-transform: uppercase;
-	text-align: center;
-	color: #fff;
-	background-color: #000;
-	border: none;
-	outline: none;
-	cursor: pointer;
-}
-.btn:hover,
-.btn:active {
-	background: #663d15;
-}
-.btn:disabled {
-	cursor: default;
-	opacity: .5;
-}
-.btn:disabled:hover {
-	background: #000;
-}
-.gallery {
-	position: relative;
-	height: 260px;
-}
-.gallery-content {
-	height: 164px;
-	margin: 0;
-	border: 7px solid white;
-	background: #ccc;
-}
-.gallery-content img {
-	width: 286px;
-	height: 164px;
-}
-.gallery .btn {
-	position: absolute;
-	bottom: 0;
-	width: 140px;
-	margin: 0;
-}
-.galllery-prev {
-	left: 0;
-}
-.gallery-next {
-	right: 0;
-}
-
-/*
-*
-No-js
-*
-*/
-.js .gallery .gallery-prev ,
-.js .gallery .gallery-next {
-	display: block;
-}
-.js .gallery .more {
-	display: none;
-}
-.no-js .gallery .gallery-prev ,
-.no-js .gallery .gallery-next {
-	display: none;
-}
-.no-js .gallery .more {
-	display: block;
-	width: 100px;
-}
-
-.index-content p {
-	margin: 0;
-	margin-bottom: 25px;
-}
-
-/*Form Input*/
-.appointment-form input {
-	float: left;
-	margin-right: 20px;
-	margin-bottom: 20px;
-	width: 106px;
-	padding: 10px 15px;
-	border: 2px solid #000;
-	font-size: 14px;
-	font-family: "PT Sans Narrow", Arial, sans-serif;
-	line-height: 24px;
-	text-transform: uppercase;
-	color: #000;
-	background: #f9f6f3;
-	outline: none;
-}
-.appointment-form input:focus {
-	border: 2px solid #663d15;
-}
-.appointment-form input:nth-child(2n) {
-	margin-right: 0;
-}
-.appointment-form .btn {
-	width: 100%;
-	clear: both;
-}
-
-/*
-*
-Sub-Pages CSS *Price-list*
-*
-*/
-.inner-page-title {
-	margin-bottom: 55px;
-}
-.inner-page-title h1 {
-	margin: 0;
-	padding: 0;
-	margin-bottom: 20px;
-	font-size: 30px;
-	line-height: 42px;
-}
-.breadcrumbs {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-.breadcrumbs li {
-	display: inline;
-	padding-right: 40px;
-	position: relative;
-}
-.breadcrumbs li:after {
-	content: "";
-	display: table;
-	position: absolute;
-	top: 5px;
-	right: 15px;
-	width: 8px;
-	height: 8px;
-	background: #000;
-	-webkit-transform: rotate(45deg);
-	    -ms-transform: rotate(45deg);
-	        transform: rotate(45deg);
-}
-.breadcrumbs a {
-	color: #000;
-	text-decoration: none;
-	cursor: pointer;
-}
-.breadcrumbs a:hover {
-	text-decoration: underline;
-}
-.breadcrumbs .current {
-	color: #aba9a7;
-}
-.breadcrumbs .current:after {
-	display: none;
-	/* content: none; */
-}
-.inner-content {
-	margin-bottom: 75px;
-}
-.inner-content h2,
-.inner-content h3 {
+			<!-- Header-Login -->
+			<div class="user-block">
+				<a href="barbershop-login.html" class="login">Вход</a>
+			</div>
+			<!-- //Header-Login -->
+		</div>
+		<!-- Header-Container -->
+	</header>
+	<!-- //Header -->
 	
-	margin-bottom: 30px;
-}
-.inner-content p {
-	margin: 14px 0;
-}
-.inner-content table {
-	border-collapse: collapse;
-}
-.inner-content td {
-	padding: 10px 15px;
-	border: 2px solid black;
-}
-.big-heading {
-	margin-top: 55px;
-	margin-bottom: 65px;
-	text-align: center;
+	<!-- Container -->
+	<div class="container">
+		
+		<!-- Inner-Page-Title -->
+		<div class="inner-page-title">
+			<h1>Галерея</h1>
+			<ul class="breadcrumbs">
+				<li> <a href="barbershop-main.html">Главная</a> </li>
+				<li class="current">Магазин</li>	
+			</ul>
+		</div>
+		<!-- //Inner-Page-Title -->
+		
+		<div class="content-columns-shop clearfix">
+			<div class="content-shop-column-left">
+				<div class="content-creators">
+					<h2>Производители:</h2>
+					<form class="check-form" action="/echo" method="post">
+						<input type="checkbox"  name="remember" id="remember-baxter">
+						<label for="remember-baxter">Baxter of California</label>
 
-}
-.big-heading h2 {
-	position: relative;
-	display: inline;
-	margin: 0;
-	padding: 0 25px;
-	font-size: 48px;
-	line-height: 48px;
-	text-align: center;
-	background: #f8f5f2 url(../img/index-content-photo-bg.jpg) repeat;
-	z-index: 2;
-	
-}
-.big-heading:after {
-	content: "";
-	top: -25px;
-	z-index: 1;
-	position: relative;
-	display: block;
-	border-bottom: 2px solid black;
-}
-.custom-list-1 {
-	margin: 14px 0;
-	padding: 0;
-	list-style: none;
-}
-.custom-list-1 li {
-	position: relative;
-	margin-bottom: 15px;
-	padding-left: 20px;
-}
-.custom-list-1 li:before {
-	content: "";
-	position: absolute;
-	top: 8px;
-	left: 0;
-	width: 8px;
-	height: 8px;
-	background: #000;
-	-webkit-transform: rotate(45deg);
-	    -ms-transform: rotate(45deg);
-	        transform: rotate(45deg);
-}
-.prices-table {
-	width: 100%;
-}
-.prices-table td {
-	width: 50%;
-}
-.prices-table td:last-child {
-	text-align: center;
-}
+						<input type="checkbox"  name="remember" id="remember-natty">
+						<label for="remember-natty">Mr Natty</label>
 
-/*
-*
-Inner-Content-sub-index
-*
-*/
-.inner-content-columns {
-	margin: 60px 0px;
-}
-.inner-content-column-left,
-.inner-content-column-right {
-	width: 460px;
-}
-.inner-content-column-left {
-	float: left;
-}
-.inner-content-column-right {
-	float: right;
-}
-.inner-content-column-left *:first-child ,
-.inner-content-column-right *:first-child {
-	margin-top: 0;
-}
-.inner-content-column-left *:last-child ,
-.inner-content-column-right *:last-child {
-	margin-bottom: 0;
-}
-.short-text {
-	padding-right: 80px;
-}
+						<input type="checkbox"  name="remember" id="remember-suavecito">
+						<label for="remember-suavecito">Suavecito</label>
 
-/*
-*
-Inner Sub Login-Page 
-*
-*/
-.inner-content .login-form {
-	margin-top: 30px;
-	margin-bottom: 10px;
-	width: 300px;
-	margin: 0 auto;
-}
+						<input type="checkbox"  name="remember" id="remember-malin">
+						<label for="remember-malin">Malin+Goetz</label>
 
-/*
-*
-Inner Sub Galery-Page
-*
-*/
-.main-galery {
-	height: 164px;
-	margin: 0;
-}
-.inner-content .main-galery img {
-	width: 250px;
-	height: 250px;
-	border: 7px solid white;
-	background: #ccc;
-}
-.main-galery img {
-	margin-left: 30px;
-	margin-top: 20px;
-}
+						<input type="checkbox"  name="remember" id="remember-murray">
+						<label for="remember-murray">Murray's</label>
 
-/*
-*
-Sub-page Shop
-*
-*/
-.content-columns-shop {
-	margin: 0;
-	padding: 0;
-}
-.content-columns-shop h2 {
-	margin-bottom: 30px;
-}
-.content-shop-column-left,
-.content-shop-column-right {
-	display: block;
-}
-.content-shop-column-left {
-	display: inline-block;
-	float: left;
-	width: 220px;
-	margin-right: 20px;
-}
+						<input type="checkbox"  name="remember" id="remember-american">
+						<label for="remember-american">American Crew</label>
+					</form>
+				</div>
+				
+				<div class="content-goods-picker">
+					<h2>Группы товаров:</h2>
+					<form class="check-form" action="/echo" method="post">
+						<input type="radio"  name="remember" id="remember-shave">
+						<label for="remember-shave">Бритвенные принадлежности</label>
 
-/* Checkbox */
-.content-creators {
-	margin: 0;
-	padding: 0;
-	font-size: 0;
-}
-.content-creators h2 {
-	font-size: 23px;
-	line-height: 24px;
-}
-.check-form {
-	min-width: 200px;
-	font-size: 14px;
-}
-.check-form label {
-	margin-bottom: 15px;
-}
-.check-form input[type="checkbox"] + label{
-	position: relative;
-	display: inline-block;
-	min-width: 100px;
-	padding-left: 40px;
-	cursor: pointer;
-}
-.check-form input[type="checkbox"] {
-	display: none;
-}
-.check-form input[type="checkbox"] ~ label:before{
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 20px;
-	height: 20px;
-	border: 2px solid #000;
-}
-.check-form input[type="checkbox"]:checked + label:before {
-	background: url(../img/sprite/sprite-shop-page.png);
-	background-position: 4px -66px;
-	background-repeat: no-repeat;
-}
-/* Radio */
-.check-form label {
-	margin-bottom: 15px;
-}
-.check-form input[type="radio"] + label{
-	position: relative;
-	display: inline-block;
-	min-width: 100px;
-	padding-left: 40px;
-	cursor: pointer;
-}
-.check-form input[type="radio"] {
-	display: none;
-}
-.check-form input[type="radio"] ~ label:before{
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 20px;
-	height: 20px;
-	border: 2px solid #000;
-	border-radius: 20px;
-}
-.check-form input[type="radio"]:checked + label:before {
-	background: url(../img/sprite/sprite-shop-page.png);
-	background-position: 6px -196px;
-	background-repeat: no-repeat;
-}
+						<input type="radio"  name="remember" id="remember-means">
+						<label for="remember-means">Средства для ухода</label>
 
+						<input type="radio"  name="remember" id="remember-accessory">
+						<label for="remember-accessory">Аксессураы</label>
+				</div>
 
+				<button class="btn">Показать</button>
+			</div>
 
-.content-goods-picker {
-	margin-bottom: 50px;
-}
-.content-shop-column-left .btn {
-	padding: 15px 30px;
-}
-.content-shop-column-right {
-	float: right;
-	width: 700px;
-	font-size: 0;
-	margin-bottom: 45px;
-}
-.catalog {
-	display: inline-block;
-	background: #fff;
-	margin-bottom: 20px;
-	max-width: 220px;
-	padding-bottom: 20px;
-}
-.catalog h2 {
-	font-size: 14px;
-	color: #000;
-	margin-top: 0;
-	margin-bottom: 10px;
-	padding-left: 15px;
-	padding-right: 15px;
+			<div class="content-shop-column-right">
+				<div class="catalog">
+					<img src="img/shop/Baxter.jpg" height="165" width="220" alt="Набор">
+					<h2>
+						Набор для путешествий
+						<span>&#171;Baxter of California&#187;</span>
+					</h2>
+					<button class="price" disabled>2 900руб</button>
+					<button class="btn">Купить</button>
+				</div>
+				<div class="catalog">
+					<img src="img/shop/BaxterKrem.jpg" height="165" width="220" alt="Крем">
+					<h2>
+					Набор для путешествий
+						<span>&#171;Baxter of California&#187;</span>
+					</h2>
+					<button class="price" disabled>2 900руб</button>
+					<button class="btn">Купить</button>
+				</div>
+				<div class="catalog"> 
+					<img src="img/shop/Suavecito.jpg" height="165" width="220" alt="Гель">
+					<h2>
+						Набор для путешествий
+						<span>&#171;Baxter of California&#187;</span>
+					</h2>
+					<button class="price" disabled>2 900руб</button>
+					<button class="btn">Купить</button>
+				</div>
+				<div class="catalog">
+					<img src="img/shop/American.jpg" height="165" width="220" alt="крем">
+					<h2>
+						Набор для путешествий
+						<span>&#171;Baxter of California&#187;</span>
+					</h2>
+					<button class="price" disabled>2 900руб</button>
+					<button class="btn">Купить</button>
+				</div>
+				<div class="catalog">
+					<img src="img/shop/AmericanGel.jpg" height="165" width="220" alt="Гель">
+					<h2>
+						Набор для путешествий
+						<span>&#171;Baxter of California&#187;</span>
+					</h2>
+					<button class="price" disabled>2 900руб</button>
+					<button class="btn">Купить</button>
+				</div>
+				<div class="catalog">
+					<img src="img/shop/BaxterComp.jpg" height="165" width="220" alt="Набор">
+					<h2>
+						Набор для путешествий
+						<span>&#171;Baxter of California&#187;</span>
+					</h2>
+					<button class="price" disabled>2 900руб</button>
+					<button class="btn">Купить</button>
+				</div>
+			</div>
 
-}
-.catalog h2 span {
-	display: block;
-	font-size: 14px;
-	color: #000;
-	margin-top: -5px;
-}
-.catalog:nth-child(1n) {
-	margin-right: 20px;
-}
-.catalog:nth-child(3n) {
-	margin-right: 0;
-}
-.catalog .btn {
-	display: inline-block;
-	margin-right: 0;
-	min-height: 45px;
-	width: 90px;
-	padding-left: 20px;
-	padding-right: 15px;
-	margin-right: 12px;
+			<div class="pages">
+					<a href="#" class="btn">1</a>
+					<a href="#" class="btn active">2</a>
+					<a href="#" class="btn">3</a>
+					<a href="#" class="btn">4</a>
+			</div>
+		</div>
+	</div>
+	<!--  -->
 
-}
-.catalog .price {
-	display: inline-block;
-	color: #000;
-	background: #e5e5e5;
-	font-size: 14px;
-	font-family: "PT Sans Narrow", Arial, sans-serif;
-	font-weight: 700;
-	line-height: 24px;
-	width: 103px;
-	min-height: 45px;
-	margin-left: 15px;
-	padding-left: 30px;
-	padding-right: 25px;
-	outline: none;
-	border: none;
-}
-.pages .btn{
-	margin: 0;
-	padding: 0;
-	width: 5px;
-	height: 25px;
-}
-.pages .btn {
- 	padding: 10px 20px;
- 	margin-left: 7px;
-}
-.btn:first-child {
-	margin-left: 0;
-}
-.pages {
-	float: right;
-	width: 700px;
-	font-size: 0;
-}
-.pages .active {
-	background: #fff; 
-	color: #000;
+	<!-- Footer -->
+	<footer class="main-footer">
+		<!-- Footer-Container -->
+		<div class="container clearfix">
+			<!-- Footer-contacts -->
+			<div class="footer-contacts">
+				Барбершоп "Бородинский"
+					<br>
+				Адерс: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
+					<br>
+				<a href="#">Как нас найти?</a>
+					<br>
+				Телефон: +7 (495) 666-02-66
+			</div>
+			<!-- //Footer-Contacts -->
+			<!-- Footer-Social -->
+			<div class="footer-social">
+				<p>Давайте дружить!</p>
+				<a href="#" class="social-btn social-btn-vk"></a>
+				<a href="#" class="social-btn social-btn-fb"></a>
+				<a href="#" class="social-btn social-btn-inst"></a>
+			</div>
+			<!-- //Footer-Social -->
+			<!-- Footer-Copyright -->
+			<div class="footer-copyright">
+				<p>Дизайн сайта:</p>
+				<a href="#" class="btn">HTMLACADEMY</a>
+			</div>
+			<!-- //Footer-Copyright -->
+		</div>
+		<!-- //Footer-Container -->
+	</footer>
+	<!-- //Footer -->
 
-}
+	<!-- Modal-Window Login -->
+	<div class="modal-content">
+		<div class="modal-content-close">
+			закрыть
+		</div>
+		<h2 class="modal-content-title">Личный Кабинет</h2>
+		<p>Введите пожалуйста свой логин и пароль.</p>
+		<form class="login-form" action="/echo" method="post">
+			<input type="text" class="icon-user" name="login" placeholder="Логин" >
+			<input type="password" class="icon-password" name="password" placeholder="Пароль" >
+			<input type="checkbox"  name="remember" id="remember-me">
+			<label for="remember-me">Запомните меня</label>
+			<a href="#" class="restore">Я забыл пароль!</a>
+			<button type="submit" class="btn">Войти</button>
+		</form>
+	</div>
+	<!-- //Modal-Window Login-->
 
+	<!-- Open and Close Modal Window Login (popup) -->
+	<script src="js/popup.js"> </script> 
+	<!-- //Open and Close Modal Window Login (popup) -->
 
+	<!-- Check on javascript in our code -->
+	<script> 
+		var html = document.documentElement;
+		html.className = html.className.replace("no-js","js");
+	</script>
+	<!-- //Check on javascript in our code -->
 
-
-
-
-
-
-
-
-/*
-*
-Footer 
-*
-*/
-.main-footer {
-	margin-top: 60px;
-	padding-top: 60px;
-	padding-bottom: 40px;
-	background: #252525 url(../img/main-footer-bg.jpg) no-repeat;
-}
-/* White Color For Footer */
-.main-footer {
-	color: #fff;
-}
-.footer-contacts {
-	float: left;
-	width: 320px;
-	margin-right: 80px;
-}
-.footer-contacts a {
-	color: #fff;
-}
-.footer-social {
-	float: left;
-	text-align: center;
-}
-.footer-copyright {
-	float: right;
-	max-width: 320px;
-}
-.footer-contacts a:hover {
-	text-decoration: none;
-}
-.footer-social p {
-	margin: 0;
-	margin-bottom: 15px;
-}
-.social-btn {
-	margin: 0;
-	display: inline-block;
-	vertical-align: top;
-	width: 43px;
-	height: 43px;
-	margin-left: 2px;
-	margin-right: 2px;
-
-	/* Hide text*/
-	font-size: 0;
-	text-decoration: none;
-	background: #000 url(../img/sprite/sprite2.png) no-repeat center;
-}
-.social-btn:nth-child(1) {
-	margin-left: 6px;
-}
-.social-btn:hover {
-	background-color: #fff;
-}
-.social-btn-vk {
-	-webkit-transition: all 0.4s ease;
-	        transition: all 0.4s ease;
-	background-position: -159px 13px;
-}
-.social-btn-vk:hover {
-	background-position: -398px 13px;
-}
-.social-btn-fb {
-	-webkit-transition: all 0.4s ease;
-	        transition: all 0.4s ease;
-	background-position: -237px 10px;
-}
-.social-btn-fb:hover {
-	background-position: -475px 10px;
-}
-.social-btn-inst {
-	-webkit-transition: all 0.4s ease;
-	        transition: all 0.4s ease;
-	background-position: -314px 11px;
-}
-.social-btn-inst:hover {
-	background-position: -552px 11px;
-}
-.footer-copyright p {
-	margin: 0;
-	margin-bottom: 15px;
-	text-align: center;
-}
-.footer-copyright .btn {
-	margin-right: 0;
-}
-.footer-copyright .btn:hover {
-	color: #000;
-	background-color: #fff;
-}
-
-/*
-*
-Modal-Content-Window *Login* Display:none;
-*
-*/
-
-
-
-
-.modal-content {
-	display: none;
-	position: absolute;
-	top: 0;
-	left: 50%;
-	width: 300px;
-	margin-top: 150px;
-	margin-left: -230px;
-	padding: 50px 80px;
-	color: #000;
-	background: #f8f5f2 url(../img/index-content-photo-bg.jpg) repeat;
-	border-radius: 2px;
-	box-shadow: 0 30px 50px rgba(0,0,0,.7);
-	
-}
-.modal-content-close {
-	position: absolute;
-	top: 10px;
-	right: -40px;
-	width: 25px;
-	height: 25px;
-	font-size: 0;
-	cursor: pointer;
-	background: url(../img/sprite/sprite-login-form2.png) no-repeat center;
-	background-position: 0 -304px;
-}
-.modal-content h2 {
-	margin: 0;
-	padding: 0;
-	font-size: 30px;
-	line-height: 42px;
-}
-.modal-content p {
-	margin: 0;
-	margin-bottom: 14px;
-}
-.modal-content .login-form {
-	margin-top: 30px;
-	margin-bottom: 10px;
-}
-.login-form input[type="text"],
-.login-form input[type="password"] {
-	width: 236px;
-	margin: 0;
-	margin-bottom: 10px;
-	padding: 10px 15px;
-	padding-right: 40px;
-
-	font-size: 14px;
-	line-height: 24px;
-	font-family: "PT Sans Narrow", Arial, sans-serif;
-	text-transform: uppercase;
-	color: #000;
-	border: 2px solid #000;
-	outline: none;
-	background:  #f9f6f3;
-}
-.login-form input[type="text"]:focus,
-.login-form input[type="password"]:focus {
- 	border: 2px solid #663d15;
-}
-.login-form input.icon-user {
-	background-image: url(../img/sprite/sprite-login-form2.png);
-	background-repeat: no-repeat;
-	background-position: 262px 13px;
-}
-.login-form input.icon-password {
-	background-image: url(../img/sprite/sprite-login-form2.png);
-	background-repeat: no-repeat;
-	background-position: 262px -62px;
-}
-.login-form .restore {
-	float: right;
-	color: #000;
-	outline: none;
-}
-.login-form .restore:hover {
-	text-decoration: none;
-	color: #663d15;	
-}
-.login-form .btn {
-	width: 100%;
-	margin-top: 15px;
-}
-.login-form input[type="checkbox"] {
-	display: none;
-}
-.login-form input[type="checkbox"] + label{
-	position: relative;
-	display: inline-block;
-	padding-left: 36px;
-	cursor: pointer;
-	vertical-align: top;
-}
-.login-form input[type="checkbox"] + label:hover {
-	color: #663d15;
-}
-.login-form input[type="checkbox"] + label:before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 20px;
-	height: 20px;
-	border: 2px solid #000;
-}
-.login-form input[type="checkbox"]:checked + label:before {
-	background: url(../img/sprite/sprite-login-form2.png);
-	background-position: 4px -228px;
-	background-repeat: no-repeat;
-}
-
-
-/*
-*
-Sub-Page Price-List (login window)
-*
-*/
-.modal-content {
-	z-index: 2;
-	position: fixed;
-}
-
-
-/*
-*
-Modal Content Window *Map*
-*
-*/
-.modal-content-map {
-	display: none;
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	width: 766px;
-	height: 561px;
-	margin-left: -390px;
-	margin-top: -287.5px;
-	border: 7px solid #fff;
-	border-radius: 2px;
-	background: url(../img/sprite/map-mask_compres.png);
-	box-shadow: 0 30px 50px rgba(0,0,0,0.7);
-}
-
-/*
-*
-Modal-Content-Window *Login* Display:block;
-*
-*/
-@-webkit-keyframes bounce {
-	0% { -webkit-transform: translateY(-2000px); transform: translateY(-2000px);}
-	70% { -webkit-transform: translateY(30px); transform: translateY(30px);}
-	90% { -webkit-transform: translateY(-10px); transform: translateY(-10px);}
-	100% { -webkit-transform: translateY(0); transform: translateY(0);}
-	
-}
-@keyframes bounce {
-	0% { -webkit-transform: translateY(-2000px); transform: translateY(-2000px);}
-	70% { -webkit-transform: translateY(30px); transform: translateY(30px);}
-	90% { -webkit-transform: translateY(-10px); transform: translateY(-10px);}
-	100% { -webkit-transform: translateY(0); transform: translateY(0);}
-	
-}
-@-webkit-keyframes shake {
-	0%,100% { -webkit-transform: translateX(0); transform: translateX(0);}
-	10%,30%,50%,70%,90% { -webkit-transform: translate(-10px); transform: translate(-10px);}
-	20%,40%,60%,80% { -webkit-transform: translateX(10px); transform: translateX(10px);}
-}
-@keyframes shake {
-	0%,100% { -webkit-transform: translateX(0); transform: translateX(0);}
-	10%,30%,50%,70%,90% { -webkit-transform: translate(-10px); transform: translate(-10px);}
-	20%,40%,60%,80% { -webkit-transform: translateX(10px); transform: translateX(10px);}
-}
-.modal-content-show {
-	display: block;
-	-webkit-animation: bounce .4s;
-	        animation: bounce .4s;
-}
-.modal-error {
-	-webkit-animation: shake .5s;
-	        animation: shake .5s;
-}
+</body>
+</html>
