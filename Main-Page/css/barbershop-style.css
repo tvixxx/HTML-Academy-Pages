@@ -241,6 +241,8 @@ Index Content
 .btn:hover,
 .btn:active {
 	background: #663d15;
+	-webkit-transition: 0.5s ease;
+	        transition: 0.5s ease;
 }
 .btn:disabled {
 	cursor: default;
