@@ -241,8 +241,8 @@ Index Content
 .btn:hover,
 .btn:active {
 	background: #663d15;
-	-webkit-transition: 0.5s ease;
-	        transition: 0.5s ease;
+	-webkit-transition: 0.2s ease;
+	        transition: 0.2s ease;
 }
 .btn:disabled {
 	cursor: default;
@@ -575,10 +575,13 @@ Sub-page Shop
 	padding-left: 40px;
 	cursor: pointer;
 }
+.check-form label:hover {
+	color: #663d15;
+}
 .check-form input[type="checkbox"] {
 	display: none;
 }
-.check-form input[type="checkbox"] ~ label:before{
+.check-form input[type="checkbox"] + label:before{
 	content: "";
 	position: absolute;
 	top: 0;
@@ -593,12 +596,11 @@ Sub-page Shop
 	background-repeat: no-repeat;
 }
 /* Radio */
-
 .check-form label  {
 	margin-bottom: 15px;
 	vertical-align: top;
 }
-.check-form input[type="radio"] ~ label{
+.check-form input[type="radio"] + label{
 	position: relative;
 	display: inline-block;
 	max-width: 120px;
@@ -606,6 +608,9 @@ Sub-page Shop
 	cursor: pointer;
 	vertical-align: top;
 }
+.check-form label:hover {
+	color: #663d15;
+	}
 .check-form input[type="radio"] {
 	display: none;
 }
