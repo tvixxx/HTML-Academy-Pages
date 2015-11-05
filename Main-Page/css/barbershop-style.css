@@ -729,6 +729,147 @@ Sub-page Shop
 
 }
 
+/*
+*
+Sub-Page Item
+*
+*/
+.content-columns-shop {
+	margin: 0;
+	padding: 0;
+}
+.content-columns-shop h2 {
+	margin-bottom: 30px;
+}
+.content-shop-item-column-left,
+.content-shop-item-column-right {
+	display: block;
+}
+.content-shop-item-column-left {
+	display: block;
+	width: 460px;
+	float: left;
+	margin-right: 90px;
+}
+.content-shop-item-column-right {
+	display: block;
+	width: 390px;
+	float: left;
+}
+
+/* Left Column */
+.shop-catalog {
+	font-size: 0;
+}
+.main-items {
+	margin-bottom: 20px;
+}
+.second-items img{
+	display: inline-block;
+	width: 140px;
+	height: 149px;
+}
+.second-items img {
+	margin-right: 20px;
+}
+.second-items img:last-child {
+	margin-right: 0;
+}
+
+/*Right Column*/
+.shop-info {
+	font-size: 0;
+}
+.shop-info-header  {
+	display: block;
+	width: 390px;
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	vertical-align: top;
+}
+.shop-info-header h2 {
+	display: inline-block;
+	font-size: 14px;
+	max-width: 150px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.shop-info-header span {
+	display: inline-block;
+	font-size: 14px;
+	max-width: 120px;
+	float: right;
+	padding-right: 10px;
+	color: #aeaeae;
+}
+.shop-info-description {
+	display: block;
+	margin-bottom: 40px;
+}
+.shop-info-description p {
+	margin: 0;
+	font-size: 14px;
+}
+.info-shop-buttons {
+	margin-bottom: 65px;
+}
+.info-shop-package h2 {
+	font-size: 24px;
+	margin-bottom: 35px;
+}
+.info-shop-package ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.info-shop-package li {
+	display: block;
+	padding-left: 30px;
+	position: relative;
+	font-size: 14px;
+	vertical-align: top;
+}
+.info-shop-package li:before {
+	content: "";
+	display: table;
+	position: absolute;
+	top: 8px;
+	right: 375px;
+	width: 8px;
+	height: 8px;
+	background: #000;
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
+}
+.shop-info .price {
+	display: inline-block;
+	color: #000;
+	background: #e5e5e5;
+	font-size: 14px;
+	font-family: "PT Sans Narrow", Arial, sans-serif;
+	font-weight: 700;
+	line-height: 24px;
+	width: 103px;
+	min-height: 45px;
+	padding-left: 25px;
+	padding-right: 20px;
+	vertical-align: top;
+	outline: none;
+	border: none;
+}
+.shop-info .btn {
+	display: inline-block;
+	font-size: 14px;
+	margin-left: 0px;
+	min-height: 45px;
+	width: 90px;
+	padding-left: 20px;
+	padding-right: 15px;
+
+}
+
 
 
 
